@@ -1,0 +1,48 @@
+.about-hero-container {
+    background: url(/img/aboutUsHero.jpg) no-repeat center center/cover;
+    height: 60vh;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 1.5rem;
+
+    h1 {
+        color: #fff;
+    }
+
+}
+
+.about-sec-1 {
+    position: relative;
+    padding: 50px;
+    color: black;
+
+    .about-us-col {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .bio {
+        padding: 50px;
+        font-size: 1.2rem;
+
+        p {
+            padding: 10px 0;
+        }
+    }
+
+    .bio-pic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: gray;
+
+    }
+
+    .music-notes {
+        position: absolute;
+        bottom: 9px;
+        right: 50%;
+    }
+}

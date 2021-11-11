@@ -1,0 +1,81 @@
+@import 'variables';
+@import 'navbar';
+@import 'navbarmoblie';
+@import 'page1hero';
+@import 'homeSec1';
+@import 'homeSec2';
+
+@import 'aboutUs';
+@import 'store';
+@import 'faq';
+
+@import 'artists';
+@import 'contact';
+@import 'footer';
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    color: $mainColor;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $mainColor;
+}
+
+.container {
+    margin: 0 100px ;
+}
+
+.line {
+    width: 80%;
+    height: 3px;
+    margin: 100px;
+    background: red;
+}
+
+.line-small {
+    width: 20%;
+    height: 3px;
+    margin: 20px 0;
+    background: red;
+}
+
+.btn {
+    background-color: $btnColor;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+
+}
+
+.whats-app {
+    z-index: 2;
+    position: fixed;
+    top: 150px;
+    right: 30px; 
+
+    
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1)
+    }
+}
+
+
+
+
+@import 'mobile';
+

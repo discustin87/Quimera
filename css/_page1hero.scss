@@ -1,0 +1,36 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(/img/Hero2.jpg)no-repeat center center/cover;
+    height: 100vh;
+
+    .btn {
+        background-color: $btnColor;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 20px;
+        font-size: 1rem;
+    
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+    
+
+    h1 {
+       margin-top: 150px;
+       color: #fff; 
+       font-family: $heroFont;
+       font-size: 4rem;
+
+    }
+
+    .hero-btn {
+        margin-top: 50px;
+
+    }
+}

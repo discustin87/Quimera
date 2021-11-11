@@ -1,0 +1,30 @@
+// colors
+$mainColor: rgba($color:#FF0000, $alpha: 1);
+$btnColor: rgba($color:#FF0000, $alpha: 0.5);
+$moblieMenuBGColor: rgba($color:#000000, $alpha: 0.8);
+// split screen ver
+$leftBgColor: rgba($color: #FFF, $alpha: 0.7);
+$rightBgColor: rgba($color: #ff0000, $alpha: 0.8);
+$rightDeetBgColor: rgba($color: #000000, $alpha: 0.7);
+
+
+$leftBtnHoverColor: rgba($color: #ff0000, $alpha: 0.7);
+$rightBtnHoverColor: rgba($color: #FFF, $alpha: 0.7);
+
+$hoverWidth: 75%;
+$otherWidth: 25%;
+// split screen tran speed
+$speed: 1000ms;
+
+// shadows
+$boxShadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.5);
+
+// font family
+@import url("https://use.typekit.net/iuz7kkm.css");
+$heroFont: 'ccmonstermashworn', sans-serif;
+;
+
+// mixin
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+  }

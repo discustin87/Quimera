@@ -1,0 +1,152 @@
+.contact-hero-container {
+    background: url(/img/contactHero.jpg) no-repeat center center/cover;
+    color: #fff;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        padding-left: 50px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    padding-top: 100px;
+
+    i {
+        margin-right: 10px;
+    }
+}
+
+.divide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 50px;
+
+    .contact-left {
+
+        .email-card {
+            background-color: rgba($color: #000000, $alpha: 0.4);
+            padding: 20px 40px;
+            border-radius: 5px;
+            color: #fff;
+          
+            h1 {
+              text-align: center;
+              margin-bottom: 30px;
+            }
+          
+            a {
+              text-decoration: none;
+              color: $mainColor;
+            }
+          }
+          
+          .btn-contact {
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            background: $mainColor;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 15px;
+            font-family: inherit;
+            font-size: 16px;
+            border: 0;
+            border-radius: 5px;
+          
+            &:focus {
+              outline: 0;
+            }
+          
+            &:active {
+              transform: scale(0.98);
+            }
+          }
+          
+          .text {
+            margin-top: 30px;
+          }
+          
+          .form-control {
+            position: relative;
+            margin: 20px 0 40px;
+            width: 300px;
+          
+            input {
+              background-color: transparent;
+              border: 0;
+              border-bottom: 2px solid #fff ;
+              display: block;
+              width: 100%;
+              padding: 15px 0;
+              font-size: 18px;
+              color: #fff;
+          
+              &:focus, &:valid {
+                outline: 0;
+                border-bottom-color: $mainColor;
+              }
+          
+              &:focus + label span, &:valid + label span {
+                color: $mainColor;
+                transform: translateY(-30px);
+              }
+            }
+
+            textarea {
+              background-color: transparent;
+              border: 0;
+              border-bottom: 2px #fff solid;
+              display: block;
+              width: 100%;
+              padding: 15px 0;
+              font-size: 18px;
+              color: #fff;
+          
+              &:focus, &:valid {
+                outline: 0;
+                border-bottom-color: $mainColor;
+              }
+          
+              &:focus + label span, &:valid + label span {
+                color: $mainColor;
+                transform: translateY(-30px);
+              }
+            }
+          
+            label {
+              position: absolute;
+              top: 15px;
+              left: 0;
+          
+              span {
+                display: inline-block;
+                font-size: 18px;
+                min-width: 5px;
+                transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+              }
+            
+            }
+          }
+    }
+    
+     .contact-right {
+        display: flex;
+        justify-content: center;
+    }
+
+}

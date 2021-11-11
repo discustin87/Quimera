@@ -1,0 +1,199 @@
+.home-sec-1 {
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    color: black;
+
+    // .price {
+    //     position: absolute;
+    //     color: gold !important;
+    //     top: 30%;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     padding: 5px;
+
+    // }
+
+    // .description {
+    //     position: absolute;
+    //     top: 35%;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     padding: 10px;
+    // }
+
+    // .left-deet {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: center;
+    //     background: $btnColor;
+    //     color: #fff;
+    //     border: 1px #000 solid;
+    //     border-radius: 20px;
+    //     margin-top: 30px;
+
+    //     p {
+    //         padding-top: 10px;
+    //     }
+    // }
+
+    // .right-deet {   
+    //     background: $rightDeetBgColor;
+    //     color: #fff;
+    //     border: 1px #FFF solid;
+    //     border-radius: 20px;
+    //     max-height: 240px;
+    //     overflow: hidden;
+
+    //     p {
+    //         padding-top: 10px;
+    //     }
+    // }
+
+    // .card {
+    //     position: absolute;
+    //     top: 30%;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     padding: 20px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: center;
+    //     background: $btnColor;
+    //     color: #fff;
+    //     border: 1px #000 solid;
+    //     margin-top: 30px;
+
+    //     p {
+    //         padding-top: 10px;
+    //     }
+
+    //     .btn {
+    //       margin: 20px 0;
+    //     }
+    // }
+
+    h1 {
+        font-size: 4rem;
+        color: #000;
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+      }
+      
+      .btn {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+        text-decoration: none;
+        color: #fff;
+        border: 0.2rem #fff solid;
+        width: 15rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 1.5rem;
+      
+      
+      }
+      
+      .home-sec-1-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #333;
+      }
+      
+      .split {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+      
+        &.left {
+          left: 0;
+          background: url('/img/chimeraBoost.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+      
+          .btn:hover {
+            background-color: $leftBtnHoverColor;
+            border: $leftBtnHoverColor;
+          }
+      
+          &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $leftBgColor;
+          }
+        }
+      
+        &.right {
+          right: 0;
+          background: url('/img/chimeraSystem.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+      
+          .btn:hover {
+            background-color: $rightBtnHoverColor;
+            border: $rightBtnHoverColor;
+          }
+      
+          &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $rightBgColor;
+          }
+        }
+      }
+      
+      .split.right, .split.left, .split.right::before, .split.left::before {
+        transition: all $speed ease-in-out;
+      }
+      
+      .hover-left {
+      
+        .left {
+          width: $hoverWidth;
+        }
+      
+        .right {
+          width: $otherWidth;
+        }
+      }
+      
+      .hover-right {
+      
+        .left {
+          width: $otherWidth;
+        }
+      
+        .right {
+          width: $hoverWidth;
+        }
+      }
+      
+      @media (max-width: 800px) {
+        h1 {
+          font-size: 2rem;
+          top: 30%;
+        }
+      
+        .btn {
+          padding: 1.2rem;
+          width: 12rem;
+        }
+      }
+}

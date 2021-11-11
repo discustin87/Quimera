@@ -1,0 +1,61 @@
+.artist-hero-container {
+    background: url(/img/artistsHero.jpg) no-repeat top center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    h1 {
+        color: #fff;
+    }
+}
+
+.artist-sec-1 {
+    padding-bottom: 100px;
+    color: gray;
+
+    img {
+        width: 100%;
+    }
+
+    .artist-card {
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        display: flex;
+        align-items: center;
+        margin: 200px 100px;
+
+        &:nth-child(1) {
+            margin-top: 5px;
+        }
+
+        &:nth-child(3) {
+            margin-bottom: 5px;
+        }
+
+        .left-side {
+            padding-right: 400px;
+        }
+
+        .artist-pic {
+            border: 2px $mainColor solid;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 450px;
+        }
+
+        .review {
+            p {
+                padding: 10px 0;
+                max-width: 500px;
+            }
+
+            i {
+                color: $mainColor;
+                font-size: 1.5rem;
+            }
+            
+        }
+
+    }
+}

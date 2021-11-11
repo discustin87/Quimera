@@ -1,0 +1,132 @@
+.faq-hero-container {
+    margin-top: 120px;
+    background: url(/img/faq-hero.jpg) no-repeat center center/cover;
+    height: 60vh;
+    display: flex;   
+    align-items: center;
+    color: #000;
+    font-size: 2.5rem;
+
+    img {
+        padding: 0;
+        margin: 0;
+        width: 3rem;
+    }
+
+}
+
+// faq sec 1
+.faq-sec-1 {
+    font-family: 'muli', sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    padding: 50px 0;
+    text-align: center;
+    color: #000;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  
+    .faq {
+      background-color: transparent;
+      border: 1px solid #9fa4a8;
+      border-radius: 10px;
+      margin: 20px 0;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+      transition: 0.3s ease;
+  
+      &.active {
+        background-color: #fff ;
+        box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.1), 0 3px 6px rgba($color: #000000, $alpha: 0.1) ;
+  
+        &::before, 
+        &::after {
+          content: '\f075';
+          font-family: 'Font Awesome 6 Free';
+          color: $mainColor;
+          font-size: 7rem;
+          position: absolute;
+          opacity: 0.1;
+          top: 20px;
+          left: 20px;
+          z-index: 0;
+
+          
+        }
+  
+        &::before {
+          color: #000;
+          top: -10px;
+          left: -30px;
+          transform: rotateY(180deg);
+        }
+  
+        .faq-toggle {
+          background-color: #9fa4a8;
+        }
+  
+        .faq-text {
+          display: block;
+          color: #000;
+        }
+  
+        .fa-times {
+          display: block;
+          color: #fff;
+        }
+  
+        .fa-chevron-down {
+           display: none;
+        
+        }
+      }
+    }
+  
+    .faq-title {
+      margin: 0 35px 0 0;
+    }
+  
+    .faq-text {
+      display: none;
+      margin: 30px 0 0;
+    }
+  
+   
+  }
+  
+  .faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+  
+    &:focus {
+      border: 0;
+    }
+  
+    .fa-times {
+      display: none;
+    }
+  
+    .fa-chevron-down {
+      display: block;
+   }
+  }
