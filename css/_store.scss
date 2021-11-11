@@ -153,6 +153,30 @@
     }
 }
 
+// tab 2
+
+.tab-2 {
+    display: flex;
+    flex-direction: column;
+
+
+    .weight {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(121, 118, 118);
+        padding: 20px;
+        width: 1200px;
+
+    }
+
+    .dimension {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(170, 166, 166);
+        padding: 20px;
+        width: 1200px;
+    }
+}
 
 
 
