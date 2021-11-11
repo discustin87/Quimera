@@ -1,3 +1,16 @@
+// btn-purchase
+.btn-purchase {
+
+    i {
+        padding-left: 10px;
+    }
+    
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
 .store-sec-1 {
     margin-top: 200px;
     display: flex;
@@ -77,17 +90,6 @@
                 }               
             }
 
-             .btn-purchase {
-
-                    i {
-                        padding-left: 10px;
-                    }
-                    
-                    .btn:hover {
-                        cursor: pointer;
-                        transform: scale(1.1);
-                    }
-                }
         }
     }
 
@@ -193,68 +195,28 @@
     }
 }
 
+//*************** sec 3 ***************
+.store-sec-3 {
 
+    h2 {
+        color: #000;
+    }
 
+    .related-Products {
+        display: flex;
+        padding-bottom: 50px;
 
+        .right-side {
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            margin-left: 50px;
+            color: #000;
 
-
-
-
-// sec 2
-
-// .store-sec-2-nav {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-around;
-//     margin: 50px;
-
-//     .nav {
-//         background: transparent;
-//         border: none;
-//         font-size: 1.5rem;
-//         cursor: pointer;
-
-//         &.active {
-//             border-bottom: 2px solid $mainColor;
-//             padding: 10px;
-//             color: $mainColor;
-//         }
-//     }
-// }
-
-// .description {
-//     display: none;
-//     color: #000;
-//     align-items: centers;
-//     justify-content: space-between;
-//     margin: 0 100px;
-
-//     &.active {
-//         display: flex;
-//     }
-
-//     .left-side {
-//         display: flex;
-//         font-size: 1.2rem;
-//         align-items: center;
-//         justify-content: center;
-//         padding: 0 100px;
-//         max-width: 650px;
-//         text-align: center;
-//     }
-
-//     .right-side {
-
-
-//         .video {
-//             padding: 0 100px;
-
-//              img {
-//              width: 300px;
-//              }
-//         }
-       
-       
-//     }
-
-// }
+            .price {
+                padding: 20px 0;
+               
+            }
+        }
+    }
+}
