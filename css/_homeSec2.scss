@@ -1,19 +1,84 @@
 .sec-2-title {
    
-
     .title {
         display: flex;
         font-size: 1.5rem;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 100px;
+        margin: 0 100px;
 
-        // .line {
-        //     width: 500px;
-        //     height: 3px;
-        //     margin: 100px;
-        //     background: red;
-        // }
+        h1 {
+          padding: 50px 0 0 0;
+        }
+
     }
 }
+
+
+// slider
+.slider {
+  background: url(/img/homeSliderBg.png) no-repeat center center/cover;
+  position: relative;
+  font-family: 'roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  }
+  
+  .carousel {
+    position: relative;
+    box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.3);
+    height: 600px;
+    overflow: hidden;
+    width: 600px;
+  
+    img {
+      width: 600px;
+      height: 600px;
+      object-fit: cover;
+    }
+  
+    .image-container {
+      display: flex;
+      transform: translateX(0);
+      transition: transform 0.5s ease-in-out;
+    }
+  
+   
+  }
+  
+   .btn-slider {
+      cursor: pointer;
+      z-index: 100000;
+      position: absolute;
+      top: 50%;
+      font-size: 1rem;
+      padding: 20px;
+      background-color: rgba($color:rgb(231, 224, 224), $alpha: 0.3);
+      color: rgba($color: #fff, $alpha: 0.2);
+      border: 0;
+      border-radius: 50%;
+  
+      &:hover {
+        transform: scale(1.1);
+        background-color: rgba($color:rgb(231, 224, 224), $alpha: 0.5); 
+        color: rgba($color: #fff, $alpha: 0.5);
+  
+      }
+  
+      &:active {
+        transform: scale(1.0);
+      }
+  
+      &.prev {
+        left: 32%;
+      }
+  
+      &.next {
+        right: 32%;
+      }
+    }
