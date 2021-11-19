@@ -20,11 +20,10 @@
     }
 
     .artist-card {
-        // display: grid;
-        // grid-template-columns: 1fr 1fr;
         display: flex;
         align-items: center;
-        margin: 200px 100px;
+        justify-content: space-around;
+        padding: 50px;
 
         &:nth-child(1) {
             margin-top: 5px;
@@ -35,20 +34,25 @@
         }
 
         .left-side {
-            padding-right: 400px;
+            padding-right: 30px;
         }
 
         .artist-pic {
             border: 2px $mainColor solid;
             border-radius: 50%;
             overflow: hidden;
+            height: 100%;
             width: 450px;
         }
 
         .review {
+            max-height: 500px;
+            overflow: hidden;
+
             p {
-                padding: 10px 0;
+                padding: 10px 5px;
                 max-width: 500px;
+                
             }
 
             i {

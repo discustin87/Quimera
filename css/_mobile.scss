@@ -5,8 +5,186 @@
 
 }
 
+@media (max-width: 1038px) {
+    .desktop {
+        display: none;
+    }
+
+    
+    .btn-slider {
+
+        &.prev {
+          left: 22%;
+        }
+    
+        &.next {
+          right: 22%;
+        }
+    }
+}
+
 @media (max-width: 1000px) {
     .desktop {
         display: none;
     }
+
+    
+    .btn-slider {
+
+        &.prev {
+          left: 22%;
+        }
+    
+        &.next {
+          right: 22%;
+        }
+    }
 }
+@media (max-width: 1053px) {
+
+    .about-sec-1 {
+        padding-bottom: 120px;
+    
+        .about-us-col {
+            display: flex;
+            flex-direction: column-reverse;
+
+            .bio {
+                padding: 20px;
+            }
+            
+        }
+
+        .music-notes {
+           display: flex;
+           justify-content: center;
+           bottom: 0;
+           left: 50%;
+        }
+    
+    }
+}
+
+@media (max-width: 860px) {
+    .artist-card {
+        flex-direction: column;
+        overflow: hidden;
+
+        &.col-rev {
+            flex-direction: column-reverse;
+        }
+        
+        .img {
+            width: 350px;
+        }
+
+        .left-side {
+            padding-right: 0px;
+        }
+
+        .reveiw {
+            margin-bottom: 20px;
+        }
+
+       
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 800px) {
+    .line {
+        margin: 50px;
+    }
+    // home sec 1
+     .home-sec-1 {
+        h1 {
+            font-size: 2rem;
+            top: 30%;
+          }
+        
+          .btn {
+            padding: 1.2rem;
+            width: 12rem;
+          }
+
+        }
+
+        // home sec 2 title
+        .sec-2-title {
+   
+            .title {
+            
+                h1 {
+                font-size: 2.5rem;
+                padding-bottom: 0;
+                }
+
+            }
+        } 
+
+        .btn-slider {
+
+            &.prev {
+              left: 12%;
+            }
+        
+            &.next {
+              right: 12%;
+            }
+        }
+}
+
+@media (max-width: 650px) {
+    .footer-rows {
+        flex-direction: row;
+
+        .row-one {
+        flex-direction: column;
+
+        .copywright {
+            padding: 20px 0;
+        }
+        }
+
+        .row-two {
+            ul {
+                flex-direction: column;
+                align-items: center;
+                 
+                li {
+                    padding-bottom: 10px;
+                }
+            } 
+        }
+    }
+
+}
+
+@media (max-width: 560px) {
+    .contact-info {
+        flex-direction: column;
+        padding-top: 50px;
+
+        .phone {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    // home sec 1
+     .home-sec-1 {
+
+          .home-sec-1-container {
+            
+            h1 {
+                white-space: pre-wrap;
+              }
+  
+  
+          }
+    }
+  }

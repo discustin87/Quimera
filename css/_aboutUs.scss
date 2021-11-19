@@ -10,6 +10,7 @@
 
     h1 {
         color: #fff;
+        text-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.8);
     }
 
 }
@@ -17,6 +18,7 @@
 .about-sec-1 {
     position: relative;
     padding: 50px;
+    padding-bottom: 100px;
     color: black;
 
     .about-us-col {

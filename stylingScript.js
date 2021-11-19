@@ -132,7 +132,8 @@ const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
 const imgs = document.getElementById('imgs');
 
-const img = document.querySelectorAll('#imgs img')
+if (imgs !== null) {
+  const img = document.querySelectorAll('#imgs img')
 
 let idx = 0;
 
@@ -170,4 +171,6 @@ prevBtn.addEventListener('click', () => {
     changeImage();
     resetInterval()
 });
+}
+
 }
