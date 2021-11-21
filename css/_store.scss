@@ -96,9 +96,11 @@
     .store-sec-1-right {
         
         .pic {
-            
+            display: flex;
+            width: 400px;
+        
             img {
-                width: 500px;
+                width: 100%;
                 border: 2px solid $mainColor;
             }
             
@@ -116,6 +118,16 @@
     margin: 50px;
     font-size: 1.5rem;
 
+    i {
+        display: none;
+        font-size: 1.5rem;
+
+        &.fa-star {
+            font-size: 0.9rem;
+            // color: gold;
+        }
+    }
+
     .tab-border {
         color: $mainColor;
         padding: 20px;
@@ -132,27 +144,35 @@
         display: flex;
     }
 
-    .left-side {
+
+    .tab-1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+         .left-side {
         display: flex;
         font-size: 1.2rem;
         align-items: center;
-        justify-content: center;
-        padding: 0 100px;
-        max-width: 650px;
+        justify-content: space-around;
+        // padding: 0 100px;
+        max-width: 450px;
         text-align: center;
-    }
+        }
 
-    .right-side {
+        .right-side {
+            display: flex;
+            align-items: stretch;
 
-
-        .video {
-            padding: 0 100px;
+            .video {
 
                 img {
                 width: 300px;
                 }
+            }
         }
     }
+   
 }
 
 // tab 2
@@ -178,6 +198,14 @@
         background-color: rgb(170, 166, 166);
         padding: 20px;
         width: 100%;
+
+        h3 {
+            padding-right: 10px;
+        }
+
+        p {
+            text-align: center;
+        }
     }
 }
 
@@ -193,6 +221,8 @@
     h2 {
         padding: 30px;
     }
+
+  
 }
 
 //*************** sec 3 ***************
