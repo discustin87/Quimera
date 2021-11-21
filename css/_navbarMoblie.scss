@@ -92,6 +92,7 @@
     transform: translate3d(600px, 0, 0);
     @include easeOut;
 
+   
     &.show {
       // slide in from 
       transform: translate3d(0, 0, 0);
@@ -102,6 +103,14 @@
     }
   }
 
+
+}
+
+.nav-link {
+
+   &.current {
+      color: $mainColor;
+    }
 
 }
 
