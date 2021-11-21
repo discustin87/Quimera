@@ -27,4 +27,26 @@ $heroFont: 'ccmonstermashworn', sans-serif;
 // mixin
 @mixin easeOut {
     transition: all 0.5s ease-out;
+}
+
+// Animations
+@keyframes slideInFromTheLeft {
+  0% {
+      transform: translateX(-300%);
   }
+
+  100% {
+      transform: translateX(0);
+      transform: rotate(-20deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
